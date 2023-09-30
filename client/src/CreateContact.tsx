@@ -1,19 +1,21 @@
 import axios from "axios";
 import React, { ChangeEvent, FormEvent, useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const CreateContact = () => {
   const [contact, setContact] = useState<any>();
+  const navigate = useNavigate();
 
   const handleInputChange = (e: ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
     setContact({ ...contact, [name]: value });
   };
-  console.log(contact);
 
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     try {
       await axios.post("http://localhost:3001/createContact", contact);
+      navigate("/");
     } catch (error) {
       console.log("Submit error:", error);
     }

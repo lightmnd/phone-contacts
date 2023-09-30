@@ -6,15 +6,13 @@ import CreateContact from "./CreateContact";
 import UpdateContact from "./UpdateContact";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <div>
       <Router>
         <Routes>
           <Route path="/" element={<Contacts />} />
           <Route path="/create" element={<CreateContact />} />
-          <Route path="/update" element={<UpdateContact />} />
+          <Route path="/update/:id" element={<UpdateContact />} />
         </Routes>
       </Router>
     </div>
