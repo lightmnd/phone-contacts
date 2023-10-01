@@ -96,11 +96,11 @@ const UpdateContact = () => {
           <div className="mb-2">
             <label htmlFor="">Ph. Number</label>
             <input
-              type="text"
               name="phoneNumber"
-              placeholder="Enter Phone Number"
+              type="tel"
+              placeholder="3493873874"
+              pattern="[0-9]{10}"
               className="form-control"
-              defaultValue={phoneNumber}
               onChange={handleInputChange}
             />
           </div>

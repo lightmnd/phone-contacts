@@ -46,11 +46,14 @@ const Contacts = () => {
 
   return (
     <>
-      <h2>Phone Contacts</h2>
-      <div className="d-flex vh-100 bg-primary justify-content-center align-items-center">
-        <SearchContact />
-      </div>
-      <div className="d-flex vh-100 bg-primary justify-content-center align-items-center">
+      <div className="d-flex vh-100 bg-primary align-items-center flex-column">
+        <div
+          className="d-flex bg-primary flex-column align-items-center"
+          style={{ minHeight: "300px" }}
+        >
+          <h2 className="m-5">Phone Contacts</h2>
+          <SearchContact />
+        </div>
         <div className="w-90 bg-white rounded p-3">
           <Link to="/create" className="btn btn-success">
             Add

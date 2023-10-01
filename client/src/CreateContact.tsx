@@ -50,8 +50,9 @@ const CreateContact = () => {
             <label htmlFor="">Ph. Number</label>
             <input
               name="phoneNumber"
-              type="text"
-              placeholder="Enter Phone Number"
+              type="tel"
+              placeholder="3493873874"
+              pattern="[0-9]{10}"
               className="form-control"
               onChange={handleInputChange}
             />

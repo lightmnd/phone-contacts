@@ -91,7 +91,7 @@ app.delete("/deleteContact/:id", async (req, res) => {
 
 app.get("/search", async (req, res) => {
   try {
-    const { query } = req.query;
+    const { query } = req.query.query;
 
     const response = await elasticClient.search({
       index: "contacts",
