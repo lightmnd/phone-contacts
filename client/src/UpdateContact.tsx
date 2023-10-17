@@ -56,7 +56,6 @@ const UpdateContact = () => {
           otherInfo: contact.otherInfo,
         }
       );
-      console.log(contact);
       setContact(res.data);
       navigate("/");
     } catch (error) {

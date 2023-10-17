@@ -47,9 +47,6 @@ app.post("/createContact", async (req, res) => {
         body: req.body,
       },
       (err, resp, status) => {
-        console.log("---->", err);
-        console.log("res---->", resp);
-        console.log("status->", status);
         if (err) {
           console.log(err);
         } else {
