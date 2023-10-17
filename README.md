@@ -22,7 +22,6 @@ This is a Phone Contacts application developed using the MERN stack (MongoDB, Ex
 - Node.js installed
 - MongoDB server running
 - Elasticsearch server running (Kibana to create indexes)
-- (Add any other prerequisites specific to your project)
 
 ## Start Elasticsearch and Kibana using Docker Compose:
 
